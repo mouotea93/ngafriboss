@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntrepriseDetailComponent implements OnInit {
 
-  id = 0
+  id = "pharmony";
   constructor() { }
 
   ngOnInit(): void {
