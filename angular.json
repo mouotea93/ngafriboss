@@ -24,9 +24,34 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/materialdesignicons.min.css",
+              "src/assets/css/fontawesome.css",
+              "src/assets/css/selectize.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/owl.transitions.css",
+              "src/assets/css/style.css",
+              "node_modules/animate.css/animate.css"
+              
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/plugins.js",
+              "src/assets/js/selectize.min.js",
+              "src/assets/js/jquery.nice-select.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/counter.int.js",
+              "src/assets/js/app.js",
+              "src/assets/js/home.js",
+              "src/assets/js/contact.js",
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js"
+            
+            
+            ]
           },
           "configurations": {
             "production": {
@@ -88,9 +113,34 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/materialdesignicons.min.css",
+              "src/assets/css/fontawesome.css",
+              "src/assets/css/selectize.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/owl.transitions.css",
+              "src/assets/css/style.css",
+              "node_modules/animate.css/animate.css"
+                        
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/plugins.js",
+              "src/assets/js/selectize.min.js",
+              "src/assets/js/jquery.nice-select.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/counter.int.js",
+              "src/assets/js/app.js",
+              "src/assets/js/home.js",
+              "src/assets/js/contact.js",
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js"
+            
+            
+            ]
           }
         },
         "lint": {
@@ -119,6 +169,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ngafriboss"
 }
