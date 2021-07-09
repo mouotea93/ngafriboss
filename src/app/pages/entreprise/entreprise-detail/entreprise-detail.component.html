@@ -1,47 +1,129 @@
 <div class="container" style="">
 <div class="row">
-<div class="col-3" style="">
+<div class="col-md-3" style="">
 </div>
-<div class="col-9">
+<div class="col-md-9">
         <header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3 mb-5 bg-white  " style="position:fixed; width:100%;background:#ffffff;z-index:9999;">
-    <div class="container-fluid">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarExample01"
-        aria-controls="navbarExample01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" routerLink="/"><i class="fa fa-home"></i> Accueil</a>
-          </li>
-         <div class="float-right">
-                    <ul class="topbar-list list-unstyled d-flex" style="margin: 11px 0px;">
-                        <li class="list-inline-item"><a href="javascript:void(0);"><i class="mdi mdi-account mr-2"></i>Guy Arnaud</a></li>
-                        <!-- <li class="list-inline-item">
-                            <select id="select-lang" class="selectize-control demo-default single">
-                                <option value="fr">Français</option>
-                                <option value="en">English</option>
-                            </select>
-                        </li> -->
-                    </ul>
-                </div>
+ 
+   <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light " style="position:fixed; width:70%;background:#ffffff;z-index:999;">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu"  role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a  class="nav-link">Contact</a>
+      </li>
+    </ul>
 
-        </ul>
-        
-      </div>
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
 
-    </div>
-    
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" >
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a  class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="assets/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a  class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="assets/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a  class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="assets/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a  class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" >
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a  class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a  class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a  class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a  class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen"  role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true"  role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
   </nav>
+  <!-- /.navbar -->
+
   <!-- Navbar -->
 
   <!-- Background image -->
@@ -70,11 +152,11 @@
   <!-- Background image -->
 </header>
 
-<div class="home-form-position">
+            <div class="home-form-position">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="home-registration-form p-4 mb-3">
-                                    <form class="registration-form">
+                                    <form [formGroup]="searchForm" class="registration-form">
                                         <div class="row">
                                             <div class="col-lg-3 col-md-6">
                                                 <div class="registration-form-box">
@@ -120,38 +202,27 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+            </div>
 </div>
 
-
-</div>
 <div class="row">
 
 
-                <div class="col-lg-3 shadow-lg p-3  bg-white rounded" style="position: fixed;
-top: 0px;
-bottom: 0;
-left: 0;
-background-color:#f8f9fa;
-z-index: 1000;
-display: block;
-overflow-x: hidden;
-overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-scrollbar-color: dark;
-">
+    <div class="col-lg-3 shadow-lg p-3  bg-white rounded maclasse" >
                     <div class="left-sidebar">
+                        <div class="ml-5"> <img src="assets/images/logoAfriboss-light.png" alt="" class="logo-light" height="60" /></div>
                         <div class="accordion" id="accordionExample">
                             <div class="card rounded mt-4 shadow-lg">
                                 <a data-toggle="collapse" href="#collapseOne" class="job-list collapsed" aria-expanded="true" aria-controls="collapseOne">
                                     <div class="card-header bg-primary text-white" id="headingOne">
                                         <h6 class="mb-0  f-18"><i class="fa fa-id-card"></i> Menu entreprise</h6>
+                                
                                     </div>
                                 </a>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
                                     <div class="card-body p-0">
                                         <div class="custom-control ">
-                                            <a routerLink="/pages/entreprise/{{id}}" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
-true}"><i class="fas fa-home"></i> fil d'actualité</a>
+                                            <a routerLink="/pages/entreprise/{{id}}" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"><i class="fas fa-home"></i> fil d'actualité</a>
                                         </div>
 
                                         <div class="custom-control custom-radio">
@@ -202,11 +273,11 @@ true}"><i class="fas fa-home"></i> fil d'actualité</a>
                                     <div class="card-body p-0">
                                        <div class="custom-control custom-radio">
                                             
-                                            <a routerLink="post" routerLinkActive="active-link"><i class="fa fa-plus-circle"></i>  Nouveau post</a>
+                                            <a (click)="openModal(template)"><i class="fa fa-plus-circle"></i>  Créer une publication</a>
                                         </div>
                                        <div class="custom-control custom-radio">
                                             
-                                            <a routerLink="article" routerLinkActive="active-link"><i class="fa fa-edit"></i>  Ecrire un article</a>
+                                            <a routerLink="new-article" routerLinkActive="active-link"><i class="fa fa-edit"></i>  Ecrire un article</a>
                                         </div>
 
                                         <div class="custom-control custom-radio">
@@ -316,7 +387,7 @@ true}"><i class="fas fa-home"></i> fil d'actualité</a>
                                     <div class="card-body p-0">
                                         <div class="custom-control custom-radio">
                                             
-                                            <a routerLink="edit-profil" routerLinkActive="active-link"><i class="fa fa-edit"></i>  Profil </a>
+                                            <a routerLink="profil" routerLinkActive="active-link"><i class="fa fa-edit"></i>  Profil </a>
                                         </div>
                                         <div class="custom-control custom-radio">
                                             
@@ -339,15 +410,251 @@ true}"><i class="fas fa-home"></i> fil d'actualité</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-9">
+
+                <div class="col-md-3">
+                </div>
+                <div class="section col-md-9">
+               
                     <router-outlet></router-outlet>
+                
+                    <div class="card col-3 shadow" style="position:fixed;bottom:0;right:1rem">
+                        <div class="card-header">
+                           
+
+                            <div class="card-tools">
+                            <span class="badge badge-danger">8 New Members</span>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <ul class="users-list clearfix">
+                            <li>
+                                <img src="assets/dist/img/user1-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" >Alexander Pierce</a>
+                                <span class="users-list-date">Today</span>
+                            </li>
+                            <li>
+                                <img src="assets/dist/img/user8-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" >Norman</a>
+                                <span class="users-list-date">Yesterday</span>
+                            </li>
+                            <li>
+                                <img src="assets/dist/img/user7-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" >Jane</a>
+                                <span class="users-list-date">12 Jan</span>
+                            </li>
+                            <li>
+                                <img src="assets/dist/img/user6-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" >John</a>
+                                <span class="users-list-date">12 Jan</span>
+                            </li>
+                            <li>
+                                <img src="assets/dist/img/user2-160x160.jpg" alt="User Image">
+                                <a class="users-list-name" >Alexander</a>
+                                <span class="users-list-date">13 Jan</span>
+                            </li>
+                            <li>
+                                <img src="assets/dist/img/user5-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" >Sarah</a>
+                                <span class="users-list-date">14 Jan</span>
+                            </li>
+                            <li>
+                                <img src="assets/dist/img/user4-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" >Nora</a>
+                                <span class="users-list-date">15 Jan</span>
+                            </li>
+                            <li>
+                                <img src="assets/dist/img/user3-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" >Nadia</a>
+                                <span class="users-list-date">15 Jan</span>
+                            </li>
+                            </ul>
+                            <!-- /.users-list -->
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer text-center">
+                            <a href="javascript:">Voir la liste des profils</a>
+                        </div>
+                        <!-- /.card-footer -->
+                    </div>
+
+                    <div style="position:fixed;bottom:0;right:15rem;z-index:9999" class="card card-primary shadow-lg col-3 card-outline direct-chat direct-chat-primary" ngxModalDraggable>
+                    <div class="card-header ">
+                       <div class="card-tools">
+                        <span title="3 New Messages" class="badge bg-primary">3</span>
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                            <i class="fas fa-comments"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <!-- Conversations are loaded here -->
+                        <div class="direct-chat-messages">
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg">
+                            <div class="direct-chat-infos clearfix">
+                            <span class="direct-chat-name float-left">Alexander Pierce</span>
+                            <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
+                            </div>
+                            <!-- /.direct-chat-infos -->
+                            <img class="direct-chat-img" src="assets/dist/img/user1-128x128.jpg" alt="Message User Image">
+                            <!-- /.direct-chat-img -->
+                            <div class="direct-chat-text">
+                            Is this template really for free? That's unbelievable!
+                            </div>
+                            <!-- /.direct-chat-text -->
+                        </div>
+                        <!-- /.direct-chat-msg -->
+
+                        <!-- Message to the right -->
+                        <div class="direct-chat-msg right">
+                            <div class="direct-chat-infos clearfix">
+                            <span class="direct-chat-name float-right">Sarah Bullock</span>
+                            <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
+                            </div>
+                            <!-- /.direct-chat-infos -->
+                            <img class="direct-chat-img" src="assets/dist/img/user3-128x128.jpg" alt="Message User Image">
+                            <!-- /.direct-chat-img -->
+                            <div class="direct-chat-text">
+                            You better believe it!
+                            </div>
+                            <!-- /.direct-chat-text -->
+                        </div>
+                        <!-- /.direct-chat-msg -->
+                        </div>
+                        <!--/.direct-chat-messages-->
+
+                        <!-- Contacts are loaded here -->
+                        <div class="direct-chat-contacts">
+                        <ul class="contacts-list">
+                            <li>
+                            <a >
+                                <img class="contacts-list-img" src="assets/dist/img/user1-128x128.jpg" alt="User Avatar">
+
+                                <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                    Count Dracula
+                                    <small class="contacts-list-date float-right">2/28/2015</small>
+                                </span>
+                                <span class="contacts-list-msg">How have you been? I was...</span>
+                                </div>
+                                <!-- /.contacts-list-info -->
+                            </a>
+                            </li>
+                            <!-- End Contact Item -->
+                        </ul>
+                        <!-- /.contatcts-list -->
+                        </div>
+                        <!-- /.direct-chat-pane -->
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <form formGroup=[chatForm]>
+                        <div class="input-group">
+                            <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                            <span class="input-group-append">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                            </span>
+                        </div>
+                        </form>
+                    </div>
+              <!-- /.card-footer-->
+            </div>
                     
+               
                     
                 </div>
                
-                
+                 <ng-template #modalEmoji>
+                    
+                    <div class="modal-body" ngxModalDraggable>
+                     <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef2.hide()">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        
+                                        <emoji-mart
+                                        set="facebook"
+                                        color="#0062cc"
+                                        useButton=true
+                                        title="Choisissez votre emoji"
+                                        emoji="point_up" (emojiSelect)="addEmoji($event)"
+                                        [i18n]="{ search: 'Recherche', categories: { search: 'Résultats de recherche', recent: 'Récents' } }"
+                                        ></emoji-mart>
+                    </div>                
+                </ng-template>
+                <ng-template #template>
+                    <div class="modal-header bg-primary text-white" ngxModalDraggable>
+                        <h6 class="modal-title pull-center"><i class="fa fa-comments"></i>  Créer une publication</h6>
+                        
+                        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <img src="assets/images/bg.jpg"  style="border:2px solid #ffffff" width="50px" height="55px" class="rounded-circle shadow-sm" alt="Cinque Terre">
+                            <span class="f-20 text-primary">  Nom de l'entreprise</span>
+                        </div>
+                        <div class="float-right f-20"> <a (click)="openModalEmoji(modalEmoji)" ><i 
+                            class="fas fa-grin-alt"></i></a>
+                        
+                        </div>
+                                <form [formGroup]="emojiForm">
+                                    <textarea class="form-control" #input   formControlName="inputField" (keydown.enter)="send()" rows="4" id="my-textarea" style="border:none" placeholder="entrez votre texte ici"></textarea>  
+                                </form>
+                                
+                            <div class="row">
+                                        <div class="col-6">
+                                            <ngx-dropzone (change)="onSelect($event)" style="width:100%" accept="image/jpeg,image/jpg,image/png,image/gif">
+                                                <ngx-dropzone-label><span class="my-5"><i class="fa fa-image"></i>  photos </span></ngx-dropzone-label>
+                                            
+                                            <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f"  [removable]="true" (removed)="onRemove(f)">
+                                                
+                                                      
+                                                        </ngx-dropzone-image-preview>
+                                        
+                                            </ngx-dropzone>
+                                        </div>
+                                        <div class="col-6">
+                                            <ngx-dropzone (change)="onSelectVideo($event)" style="width:100%" accept="video/mp4">
+                                                <ngx-dropzone-label style="width:100%"><span class="ml-5" ><i class="fas fa-film" ></i>  videos</span></ngx-dropzone-label>
+                                            
+                                                <ngx-dropzone-video-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let v of filesFideo" [file]="v"  [removable]="true" (removed)="onRemoveVideo(v)">
+                                                
+                                                      
+                                                </ngx-dropzone-video-preview>
+
+                                            </ngx-dropzone>
+                                        </div>
+                                    
+                                </div>
+                        </div>
+                        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" style="width:100%" ><i class="fas fa-globe"></i>  Publier</button>
+                    </div>
+                </ng-template>
             </div>
+
+
+
+
             
-            </div>
+
+
+
+      
             

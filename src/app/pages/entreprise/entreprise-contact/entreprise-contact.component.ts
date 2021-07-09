@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {FormGroup,FormControl} from '@angular/forms';
 @Component({
   selector: 'app-entreprise-contact',
   templateUrl: './entreprise-contact.component.html',
@@ -12,4 +12,8 @@ export class EntrepriseContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  contactForm = new FormGroup({
+    label:new FormControl()
+  })
+  
 }

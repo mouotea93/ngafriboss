@@ -23,10 +23,20 @@ import { EntrepriseContactComponent } from './entreprise-contact/entreprise-cont
 import { EntrepriseTeamComponent } from './entreprise-team/entreprise-team.component';
 import { EntrepriseGalerieComponent } from './entreprise-galerie/entreprise-galerie.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { ImageDragDirective } from './entreprise-detail/image-drag.directive';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgxModalDraggableDirective } from './entreprise-detail/draggable.directive';
+import { EntrepriseArticleEditComponent } from './entreprise-article-edit/entreprise-article-edit.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 @NgModule({
   declarations: [EntrepriseListComponent,
                  EntrepriseDetailComponent, 
                  EntrepriseEditComponent, 
+                 NgxModalDraggableDirective,
                  EntrepriseBlogComponent, 
                  EntrepriseAboutComponent, 
                  EntrepriseEventComponent, 
@@ -39,7 +49,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
                  EntrepriseHomeComponent,
                  EntrepriseContactComponent,
                  EntrepriseTeamComponent,
-                 EntrepriseGalerieComponent
+                 EntrepriseGalerieComponent,
+                 ImageDragDirective,
+                 EntrepriseArticleEditComponent
                 ],
         imports: [
           CommonModule,
@@ -56,7 +68,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
           NbActionsModule,
           NbThemeModule, 
           NbToastrModule,
-          MDBBootstrapModule.forRoot() 
+          MDBBootstrapModule,
+          TooltipModule.forRoot(),
+          ModalModule.forRoot(),
+          NgxDropzoneModule,
+          PickerModule,
+          ReactiveFormsModule,
+          CKEditorModule
         ],
         providers: [  
           { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true }  

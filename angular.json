@@ -32,7 +32,10 @@
               "src/assets/css/owl.theme.css",
               "src/assets/css/owl.transitions.css",
               "src/assets/css/style.css",
-              "node_modules/animate.css/animate.css"
+              "node_modules/animate.css/animate.css",
+              "node_modules/@ctrl/ngx-emoji-mart/picker.css",
+              "src/assets/css/monstyle.css"
+              
               
             ],
             "scripts": [
@@ -48,7 +51,10 @@
               "src/assets/js/home.js",
               "src/assets/js/contact.js",
               "node_modules/chart.js/dist/Chart.js",
-              "node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js",
+              "src/assets/dist/js/adminlte.js",
+              "src/assets/dist/js/demo.js",
+              "src/assets/dist/js/pages/dashboard.js"
             
             
             ]
@@ -121,7 +127,9 @@
               "src/assets/css/owl.theme.css",
               "src/assets/css/owl.transitions.css",
               "src/assets/css/style.css",
-              "node_modules/animate.css/animate.css"
+              "node_modules/animate.css/animate.css",
+              "node_modules/@ctrl/ngx-emoji-mart/picker.css",
+              "src/assets/css/monstyle.css"
                         
             ],
             "scripts": [
@@ -137,7 +145,10 @@
               "src/assets/js/home.js",
               "src/assets/js/contact.js",
               "node_modules/chart.js/dist/Chart.js",
-              "node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js",
+              "src/assets/dist/js/adminlte.js",
+              "src/assets/dist/js/demo.js",
+              "src/assets/dist/js/pages/dashboard.js"
             
             
             ]

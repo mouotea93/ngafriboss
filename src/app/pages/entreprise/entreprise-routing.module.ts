@@ -16,6 +16,8 @@ import { EntrepriseHomeComponent } from './entreprise-home/entreprise-home.compo
 import { EntrepriseContactComponent } from './entreprise-contact/entreprise-contact.component';
 import { EntrepriseTeamComponent } from './entreprise-team/entreprise-team.component';
 import { EntrepriseGalerieComponent } from './entreprise-galerie/entreprise-galerie.component';
+import { EntrepriseArticleEditComponent } from './entreprise-article-edit/entreprise-article-edit.component';
+import { EntrepriseProfileComponent } from './entreprise-profile/entreprise-profile.component';
 
 const routes: Routes = [
   {
@@ -78,6 +80,14 @@ const routes: Routes = [
           path: 'galerie',      
           component: EntrepriseGalerieComponent
       }, 
+      {
+          path: 'new-article',
+          component:EntrepriseArticleEditComponent
+      },
+      {
+          path: 'profil',
+          component:EntrepriseProfileComponent
+      }
 
     ]    
   },    

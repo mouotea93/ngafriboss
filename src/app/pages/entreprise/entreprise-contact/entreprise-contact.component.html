@@ -81,7 +81,7 @@
                 <div class="col-lg-8 col-md-7 mt-4 pt-2">
                     <div class="custom-form rounded border p-4">
                         <div id="message"></div>
-                        <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                        <form method="post" [formGroup]="contactForm"  id="contact-form">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group app-label">

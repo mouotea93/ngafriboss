@@ -1,0 +1,57 @@
+<div class=" container">
+            <div class="row">
+                <div class="col-12">
+                        <fieldset class="border p-2">
+                            <legend class="w-auto"><i class="fas fa-edit"></i> Nouvel article</legend>
+                                <form [formGroup]="articleForm">
+                                    <div class="form-group position-relative">
+                                        <label>Titre <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" placeholder="Titre" name="email" required="">
+                                    </div>
+                                     <div class="form-group position-relative">
+                                          <label>catégorie <span class="text-danger">*</span> </label>      
+                                        <select id="select-country" class="form-control ">
+                                            <option value="">Actualité</option>
+                                            <option value="AF">Yaoundé</option>
+                                            <option value="AX">Bafoussam</option>
+                                            <option value="AL">Maroua</option>
+                                            
+                                        </select>
+                                    </div>
+                                      <div class="form-group position-relative">
+                                        <label for="exampleFormControlFile1">image de presentation</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                                                    
+                                      <div class="form-group position-relative">
+                                        <label for="exampleFormControlFile1">contenu</label>
+                                      <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+                                    </div>
+                                                                    
+                                    <div class="form-group position-relative">
+                                     <label>Description</label>
+                                     <textarea style="width:100%" rows="5"></textarea>  
+                                     </div>
+
+                                     <button type="submit"  style="width:100%" class="btn btn-primary"><i class="fas fa-globe"></i>  Enregistrer et Publier l'article</button>
+                                </form> 
+                        </fieldset>
+                    </div>
+            </div>
+       
+        </div>
+
+<section class="section">
+ <div class="blog-details-desc p-2">
+                           <h5>Conseils pour rediger un bon article:</h5>
+                            <blockquote class="blockquote p-4 position-relative">
+                                <i class="fas fa-quote-left text-primary"></i>
+                                <p class="mb-2 font-italic f-14 text-dark">It is a paradisematic country in which roasted parts of sentences fly into your mouth Even the all-powerful Pointing has control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name as of Lorem Ipsum decided to leave.</p>
+                                <h6 class="mb-0"><a href="#" class="text-dark">By : Maude J. McDowell</a></h6>
+                            </blockquote>
+                        
+                        </div>
+</section>  
+
+        
+    
